@@ -1,0 +1,170 @@
+*{
+    margin :0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#edece8;
+}
+
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:#6d6c67;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover{
+    color:#f79067;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links li{
+        margin: auto auto;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+/*Background picture Top section */
+
+#background{
+    margin: auto;
+    color:rgb(226, 226, 226);
+    text-align: center;
+    background-color: #f79067;
+    /* background: url('imgs/newyork.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 60vh;
+}
+
+#content{
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*About me section */
+#about{
+    padding:4rem;
+    background-color:#edece8;
+}
+
+#about h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #56617A;
+}
+
+#about img{
+    display:block;
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#about p{
+    margin: auto auto;
+    width:45%;
+    color:#56617A;
+}
+
+/* Projects section */
+
+#work{
+    padding: 8rem;
+    /* background-color:#666; */
+     background-color: #2B313D; 
+}
+
+#work h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #D4CEC2;
+}
+
+#work .heading{
+    margin-bottom: 100px;
+}
+
+
+.projects {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.projects img {
+    width: 100%;
+    border: 3px #fff solid; 
+}
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center; 
+}
+
+.btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #f79067;
+    color: #000; 
+}
+
+.btn-dark {
+  background: black;
+  color: #fff; 
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; 
+}
+
+#contact{
+    padding: 50px 0;
+    background-color:#edece8;
+}
+
+#contact h1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.boxes{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes div{
+    border: 3px #5d4954 solid;
+    padding: 30px;
+}
+
